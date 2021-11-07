@@ -4,7 +4,8 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".AddTaskFragment">
+    tools:context=".EditFragment">
+
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
@@ -12,7 +13,7 @@
         android:background="@drawable/bg_main">
 
         <ImageButton
-            android:id="@+id/btBack"
+            android:id="@+id/btBackUD"
             android:layout_width="48dp"
             android:layout_height="48dp"
             android:layout_marginStart="10dp"
@@ -61,7 +62,7 @@
                 android:textStyle="bold" />
 
             <EditText
-                android:id="@+id/taskTitleET"
+                android:id="@+id/taskTitleETUD"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="5dp"
@@ -85,7 +86,7 @@
                 android:textStyle="bold" />
 
             <EditText
-                android:id="@+id/taskDescriptionET"
+                android:id="@+id/taskDescriptionETUD"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="5dp"
@@ -98,7 +99,7 @@
                 tools:ignore="TextContrastCheck" />
 
             <TextView
-                android:id="@+id/tvTaskCard"
+                android:id="@+id/tvTaskCardUD"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="5dp"
@@ -109,7 +110,7 @@
                 android:textStyle="bold" />
 
             <EditText
-                android:id="@+id/totalTimeET"
+                android:id="@+id/totalTimeETUD"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="5dp"
@@ -133,7 +134,7 @@
                 android:textStyle="bold" />
 
             <LinearLayout
-                android:id="@+id/llplantPicker"
+                android:id="@+id/llplantPickerUD"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="10dp"
@@ -147,7 +148,7 @@
                     app:cardCornerRadius="50dp">
 
                     <com.airbnb.lottie.LottieAnimationView
-                        android:id="@+id/plantImageAdd"
+                        android:id="@+id/plantImageEdit"
                         android:layout_width="100dp"
                         android:layout_height="90dp"
                         app:layout_constraintEnd_toEndOf="parent"
@@ -159,7 +160,7 @@
                 </androidx.cardview.widget.CardView>
 
                 <Spinner
-                    android:id="@+id/plantPicker"
+                    android:id="@+id/plantPickerSPinnerEdit"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:entries="@array/plantsItems"
@@ -169,19 +170,38 @@
             </LinearLayout>
 
 
-            <Button
-                android:id="@+id/btAdd"
+            <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_margin="10dp"
-                android:background="@drawable/item_row_style"
-                android:backgroundTint="#673AB7"
-                android:fontFamily="casual"
-                android:text="@string/add" />
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btUpdate"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/item_row_style"
+                    android:backgroundTint="#673AB7"
+                    android:fontFamily="casual"
+                    android:text="@string/update" />
+
+                <Button
+                    android:id="@+id/btDelete"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/item_row_style"
+                    android:backgroundTint="#673AB7"
+                    android:fontFamily="casual"
+                    android:text="@string/delete" />
+            </LinearLayout>
 
         </LinearLayout>
 
     </androidx.constraintlayout.widget.ConstraintLayout>
+
 
 
 </FrameLayout>
