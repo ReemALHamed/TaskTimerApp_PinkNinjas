@@ -76,6 +76,10 @@ https://user-images.githubusercontent.com/85634099/140648731-a08f251d-4415-487a-
 
 # contributors
 Shoutout to the MARVELOUS PINK NINJAS !!
-[Reem ALHamed](https://github.com/ReemALHamed) -  [Safa Falaqi](https://github.com/safafalaqi) - [Reenad Alghofaili](https://github.com/ReenadGh) - [smaher alharthi](https://github.com/smaherHassanAlharthi)
+
+[Reem ALHamed](https://github.com/ReemALHamed)
+[Safa Falaqi](https://github.com/safafalaqi) 
+[Reenad Alghofaili](https://github.com/ReenadGh)
+[smaher alharthi](https://github.com/smaherHassanAlharthi)
 
 
